@@ -56,7 +56,7 @@ export const loginUser = async (req,res,next) => {
     }
 }
 
-export const userProfile = async (res,req,next) => {
+export const userProfile = async (req,res,next) => {
     try {
         let user = await User.findById(req.user._id);
 
@@ -81,7 +81,7 @@ export const userProfile = async (res,req,next) => {
     }
 }
 
-export const updateProfile = async (res,req,next) => {
+export const updateProfile = async (req,res,next) => {
     try {
         let user = await User.findById(req.user._id);
 
